@@ -60,18 +60,17 @@ a {
   margin-inline-end: 200px;
 }
 
-/*@media (max-width: 800px) {
-  .card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
-   } 
-}*/
-
 .card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+}
+
+/*when the browser screen size is under 800px apply this style rule*/
+@media (max-width: 800px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card-white {
